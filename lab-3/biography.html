@@ -5,6 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Біографія</title>
+    <style>
+       .button:visited   {
+            background-color: blue;
+            width: 120px;
+            color:red;
+            border: 2px solid black;
+            display:block;
+            padding: 10px ;
+            text-align: center;
+        }
+        .button:link{
+            background-color: blue;
+            width: 120px;
+            color:red;
+            border: 2px solid black;
+            display:block;
+            padding: 10px;
+            text-align: center;
+        }
+        .button:hover {
+            background-color: magenta;
+            color: gray;
+        }
+        .button:active {
+            background-color: yellow;
+            color:black;
+        }
+        .base {
+            background-color: purple;
+            color:white;
+        }
+    .childhood {
+        background-color: gray;
+        color: black;
+    }
+    .schoolyears {
+        background-color: royalblue;
+        color: red;
+    }
+    .outsideofschool {
+        background-color: rgb(225, 65, 150);
+        color: rgb(45, 207, 243);
+    }
+
+.university {
+    background-color: rgb(65, 225, 89);
+        color: rgb(30, 0, 255);
+}
+    </style>
 </head>
 
 <body>
@@ -14,21 +63,21 @@
     <h3>Зміст</h3>
    
 
-    <a href="biography.html#BaseInformation">Базова Інформація</a> <br>
-    <a href="biography.html#Childhood">Дитинство</a> <br>
-    <a href="biography.html#SchoolYears">Шкільні роки</a> <br>
-    <a href="biography.html#OutsideOfSchool">Поза школою</a> <br>
-    <a href="biography.html#University">Університет</a> <br>
+    <a class="button" href="biography.html#BaseInformation">Базова Інформація</a> <br>
+    <a class="button" href="biography.html#Childhood">Дитинство</a> <br>
+    <a class="button" href="biography.html#SchoolYears">Шкільні роки</a> <br>
+    <a class="button" href="biography.html#OutsideOfSchool">Поза школою</a> <br>
+    <a class="button" href="biography.html#University">Університет</a> <br>
     </article>
     <article id="BaseInformation">
         <h2>Базова інформація</h2>
-        <p>Дубровська Уляна Дмитрівна. Навчаюсь у Прикарпатському Національному Університеті імені Василя Стефаника.
+        <p class="base">Дубровська Уляна Дмитрівна. Навчаюсь у Прикарпатському Національному Університеті імені Василя Стефаника.
             Студентка факультету математики та інформатики. У групі КН-11.</p>
             <a href="#content">до змісту</a>
     </article>
     <article id="Childhood">
         <h2>Дитинство</h2>
-        <p>Своє дитинство я провела досить весело. Я часто приїжала до бабці де ми з моїми братами ходили на ставок
+        <p class="childhood">Своє дитинство я провела досить весело. Я часто приїжала до бабці де ми з моїми братами ходили на ставок
             купатися.
             Також з своїми друзями ми часто влаштовували пікніки в будиночках,які ми будували самі з різних підручних
             елементів.</p>
@@ -36,13 +85,13 @@
     </article>
     <article id="SchoolYears">
         <h2>Шкільні роки</h2>
-        <p>В школі я була активною дівчинкою,я завжди брала участь у різних конкурсах,змаганнях та олімпіадах.
+        <p class="schoolyears">В школі я була активною дівчинкою,я завжди брала участь у різних конкурсах,змаганнях та олімпіадах.
             Також ходила на різні гуртки.</p>
             <a href="#content">до змісту</a>
     </article>
     <article id="OutsideOfSchool">
         <h2>Поза школою</h2>
-        <p>Своє дитинство я провела досить весело. Я часто приїжала до бабці де ми з моїми братами ходили на ставок
+        <p class="outsideofschool">Своє дитинство я провела досить весело. Я часто приїжала до бабці де ми з моїми братами ходили на ставок
             купатися.
             Також з своїми друзями ми часто влаштовували пікніки в будиночках,які ми будували самі з різних підручних
             елементів.</p>
@@ -50,7 +99,7 @@
     </article>
     <article id="University">
         <h2>Університет</h2>
-        <p>Я вступила у 2023 рокі в ВНЗ ПНУ імені Василля Стефаника. Навчаюсь за спеціальністю Комп'ютерні науки.</p>
+        <p class="university">Я вступила у 2023 рокі в ВНЗ ПНУ імені Василля Стефаника. Навчаюсь за спеціальністю Комп'ютерні науки.</p>
         <a href="#content">до змісту</a>
         <a href="#top">Уверх</a>
     </article>
