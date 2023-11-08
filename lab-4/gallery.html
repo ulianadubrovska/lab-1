@@ -5,24 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        a#back {
+            font-style: italic;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        #photo1 {
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        #photo2 {
+            text-align: center;
+            font-size: 1.8em;
+        }
+
+        #photo3 {
+            text-align: center;
+            font-size: 2.1em;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
 
-        <h1>Галерея Дубровської Уляни Дмитрівни</h1>
+    <h1>Галерея Дубровської Уляни Дмитрівни</h1>
 
-        <a href="index.html">Назад на головну</a>
+    <a id="back" href="index.html">Назад на головну</a>
 
-        <h2>Мої зображення</h2>
+    <h2>Мої зображення</h2>
 
-        <h3>Зображення у цій папці</h3>
-        <img src="./456736.jpeg&text=photo1" alt="Photo1"> 
+    <h3 id="photo1">Зображення у цій папці</h3>
+    <img src="./456736.jpeg&text=photo1" alt="Photo1">
 
-        <h3>Зображення у папці</h3>
-       <img src="images/photo2.jpeg&text=photo2" alt="Photo2"> 
+    <h3 id="photo2">Зображення у папці</h3>
+    <img src="images/photo2.jpeg&text=photo2" alt="Photo2">
 
-        <h3> «Зображення онлайн»</h3>
-        <img src="https://place-hold.it/300x500" width="1280" height="1024" alt="Photo3">
+    <h3 id="photo3"> «Зображення онлайн»</h3>
+    <img src="https://place-hold.it/300x500" width="1280" height="1024" alt="Photo3">
 
 </body>
+
 </html>
