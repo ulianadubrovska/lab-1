@@ -1,50 +1,55 @@
-.row {
-    width: 100%;
-}
-
 h1 {
     text-align: center;
+    font-size: 22px;
 }
 
-.row div div {
-    background-color: grey;
-    border: 3px solid black;
-    margin: 0px 10px 10px 10px;
-    display: block;
+a#back {
+    font-style: italic;
 }
 
-.row p {
-    padding: 20px;
+h2 {
+    text-align: center;
+    font-size: 18px;
 }
 
 h3 {
-    float: right;
     text-align: center;
-    margin-top: auto;
-    margin-left: auto;
-    width: 100px;
-    border: 1px solid black;
+    font-size: 16px;
+}
+
+ul li:nth-child(odd) {
+    background-color: gray;
+    color: black;
+}
+
+ul li:nth-child(even) {
+    background-color: white;
+    color: purple;
 
 }
 
-#Sport-1 {
-    background-color: green;
+.three:hover {
+    background-color: purple;
+    cursor: pointer;
 }
 
-#Sport-2 {
-    background-color: orange;
+.five:hover {
+    background-color: blueviolet;
+    cursor: pointer;
 }
 
-#Sport-3 {
-    background-color: red;
+.four {
+    background-color: blue;
 }
 
-/* Large devices */
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
 @media (min-width: 992px) {
-    .row div div {
-        height: 220px;
-    }
-
+   
     .col-lg-1,
     .col-lg-2,
     .col-lg-3,
@@ -56,9 +61,7 @@ h3 {
     .col-lg-9,
     .col-lg-10,
     .col-lg-11,
-    .col-lg-12 {
-        float: left;
-    }
+    .col-lg-12 {flex: 1 1 100% }
 
     .col-lg-1 {
         width: 8.33%;
@@ -109,8 +112,8 @@ h3 {
     }
 }
 
-/* Medium devices */
 @media (min-width: 768px) and (max-width: 992px) {
+
 
     .col-md-1,
     .col-md-2,
@@ -124,16 +127,11 @@ h3 {
     .col-md-10,
     .col-md-11,
     .col-md-12 {
-        float: left;
     }
 
-    #div1,
-    #div2 {
-        height: 200px;
-    }
-
-    #div3 {
-        height: 130px;
+    .row {
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .col-md-1 {
@@ -185,11 +183,7 @@ h3 {
     }
 }
 
-/* Small device */
 @media (max-width: 768px) {
-    .row div div {
-        height: 100%;
-    }
 
     .col-sm-1,
     .col-sm-2,
@@ -203,7 +197,11 @@ h3 {
     .col-sm-10,
     .col-sm-11,
     .col-sm-12 {
-        float: left;
+    }
+
+    .row {
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .col-sm-1 {

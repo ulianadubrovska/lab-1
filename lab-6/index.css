@@ -1,49 +1,56 @@
-.row {
-    width: 100%;
-}
-
 h1 {
     text-align: center;
+    font-size: 24px;
 }
 
-.row div div {
-    background-color: grey;
-    border: 3px solid black;
-    margin: 0px 10px 10px 10px;
-    display: block;
+p {
+    font-size: 120%;
 }
 
-.row p {
-    padding: 20px;
+#bio:link {
+    color: rgb(123, 29, 237);
 }
 
-h3 {
-    float: right;
+#bio:visited {
+    color: aquamarine;
+}
+
+#nowadays:link {
+    color: rgb(10, 4, 92);
+}
+
+#nowadays:visited {
+    color: rgb(12, 6, 200);
+}
+
+#friends:link {
+    color: rgb(4, 97, 55);
+}
+
+#friends:visited {
+    color: rgb(154, 15, 15);
+}
+
+#gallery:link {
+    color: rgb(65, 3, 59);
+}
+
+#gallery:visited {
+    color: rgb(194, 7, 185);
+}
+
+a {
     text-align: center;
-    margin-top: auto;
-    margin-left: auto;
-    width: 100px;
-    border: 1px solid black;
-
 }
 
-#Sport-1 {
-    background-color: green;
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
-#Sport-2 {
-    background-color: orange;
-}
-
-#Sport-3 {
-    background-color: red;
-}
-
-/* Large devices */
 @media (min-width: 992px) {
-    .row div div {
-        height: 220px;
-    }
+
 
     .col-lg-1,
     .col-lg-2,
@@ -57,7 +64,7 @@ h3 {
     .col-lg-10,
     .col-lg-11,
     .col-lg-12 {
-        float: left;
+        
     }
 
     .col-lg-1 {
@@ -109,9 +116,9 @@ h3 {
     }
 }
 
-/* Medium devices */
 @media (min-width: 768px) and (max-width: 992px) {
 
+   
     .col-md-1,
     .col-md-2,
     .col-md-3,
@@ -124,16 +131,10 @@ h3 {
     .col-md-10,
     .col-md-11,
     .col-md-12 {
-        float: left;
+        
     }
-
-    #div1,
-    #div2 {
-        height: 200px;
-    }
-
-    #div3 {
-        height: 130px;
+     .row {
+        flex-wrap: wrap;
     }
 
     .col-md-1 {
@@ -185,11 +186,7 @@ h3 {
     }
 }
 
-/* Small device */
 @media (max-width: 768px) {
-    .row div div {
-        height: 100%;
-    }
 
     .col-sm-1,
     .col-sm-2,
@@ -203,7 +200,10 @@ h3 {
     .col-sm-10,
     .col-sm-11,
     .col-sm-12 {
-        float: left;
+
+    }
+    .row {
+        flex-direction: column;
     }
 
     .col-sm-1 {

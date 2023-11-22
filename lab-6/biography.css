@@ -1,49 +1,108 @@
-.row {
-    width: 100%;
-}
-
 h1 {
     text-align: center;
+    font-size: 22px;
 }
 
-.row div div {
-    background-color: grey;
-    border: 3px solid black;
-    margin: 0px 10px 10px 10px;
-    display: block;
-}
-
-.row p {
-    padding: 20px;
+a#back {
+    font-style: italic;
 }
 
 h3 {
-    float: right;
     text-align: center;
-    margin-top: auto;
-    margin-left: auto;
-    width: 100px;
+}
+
+p {
+    font-size: 120%;
+}
+
+h2 {
+    font-size: 140%;
+}
+
+
+
+article>a {
+    font-weight: 600;
+}
+
+a#up {
+    text-transform: uppercase;
+}
+
+.button:visited {
+    background-color: blue;
+    width: 120px;
+    color: red;
+    border: 2px solid black;
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+.button:link {
+    background-color: blue;
+    width: 120px;
+    color: red;
+    border: 2px solid black;
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: magenta;
+    color: gray;
+}                      
+
+.button:active {
+    background-color: yellow;
+    color: black;
+}
+
+#BaseInformation {
+    background-color: purple;
+    color: white;
     border: 1px solid black;
-
 }
 
-#Sport-1 {
-    background-color: green;
+#Childhood {
+    background-color: gray;
+    color: black;
+    border: 1px solid black;
 }
 
-#Sport-2 {
-    background-color: orange;
+#SchoolYears {
+    background-color: royalblue;
+    color: red;
+    border: 1px solid black;
 }
 
-#Sport-3 {
-    background-color: red;
+#OutsideOfSchool {
+    background-color: rgb(225, 65, 150);
+    color: rgb(45, 207, 243);
+    border: 1px solid black;
 }
 
-/* Large devices */
+#University {
+    background-color: rgb(65, 225, 89);
+    color: rgb(30, 0, 255);
+    border: 1px solid black;
+}
+article {
+    height: 300px;
+    padding: 10px;
+    
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+
 @media (min-width: 992px) {
-    .row div div {
-        height: 220px;
-    }
+
 
     .col-lg-1,
     .col-lg-2,
@@ -57,7 +116,7 @@ h3 {
     .col-lg-10,
     .col-lg-11,
     .col-lg-12 {
-        float: left;
+      flex-grow: 1;
     }
 
     .col-lg-1 {
@@ -109,9 +168,9 @@ h3 {
     }
 }
 
-/* Medium devices */
 @media (min-width: 768px) and (max-width: 992px) {
 
+   
     .col-md-1,
     .col-md-2,
     .col-md-3,
@@ -124,16 +183,10 @@ h3 {
     .col-md-10,
     .col-md-11,
     .col-md-12 {
-        float: left;
+        flex-grow: 1;
     }
-
-    #div1,
-    #div2 {
-        height: 200px;
-    }
-
-    #div3 {
-        height: 130px;
+     .row {
+        flex-wrap: wrap;
     }
 
     .col-md-1 {
@@ -185,11 +238,7 @@ h3 {
     }
 }
 
-/* Small device */
 @media (max-width: 768px) {
-    .row div div {
-        height: 100%;
-    }
 
     .col-sm-1,
     .col-sm-2,
@@ -203,7 +252,10 @@ h3 {
     .col-sm-10,
     .col-sm-11,
     .col-sm-12 {
-        float: left;
+        flex-grow: 1;
+    }
+    .row {
+        flex-direction: column;
     }
 
     .col-sm-1 {
