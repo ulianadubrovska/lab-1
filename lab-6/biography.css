@@ -63,35 +63,40 @@ a#up {
     background-color: purple;
     color: white;
     border: 1px solid black;
+    height: 300px;
+    padding: 10px;
 }
 
 #Childhood {
     background-color: gray;
     color: black;
     border: 1px solid black;
+    height: 300px;
+    padding: 10px;
 }
 
 #SchoolYears {
     background-color: royalblue;
     color: red;
     border: 1px solid black;
+    height: 300px;
+    padding: 10px;
 }
 
 #OutsideOfSchool {
     background-color: rgb(225, 65, 150);
     color: rgb(45, 207, 243);
     border: 1px solid black;
+    height: 300px;
+    padding: 10px;
 }
 
 #University {
     background-color: rgb(65, 225, 89);
     color: rgb(30, 0, 255);
     border: 1px solid black;
-}
-article {
     height: 300px;
     padding: 10px;
-    
 }
 .row {
     display: flex;
