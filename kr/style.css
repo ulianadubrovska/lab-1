@@ -1,0 +1,38 @@
+#block {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.text-style1 {
+    font-family: 'Kanit', sans-serif;
+}
+ 
+.text-style2 {
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    bottom: 0;
+    right: 0
+}
+
+.text-style3 {
+    font-family: 'Poppins', sans-serif;
+}
+.block-1{
+    background-color: aqua;
+color: black;
+    position: relative
+
+}
+.block-2 {
+    background-color: greenyellow;
+    color: black;
+}
+.block-3{
+    background-color: violet;
+    color: black;
+}
+.block-4{
+    background-color: royalblue;
+    color:black;
+}
